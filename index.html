@@ -1,22 +1,44 @@
 <html lang="en">
 <head>
     <title>Aeroflot</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="img/cairo.png" alt=""/></td>
-            <td><img src="img/cremlin.png" alt=""/></td>
-        </tr>
-        <tr>
-            <td><img src="img/ny.png" alt=""/></td>
-            <td><img src="img/paris.png" alt=""/></td>
-        </tr>
-        <tr>
-            <td><img src="img/rome.png" alt=""/></td>
-            <td><img src="img/sydney.png" alt=""/></td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="inner">
+            <div class="item">
+                <img src="img/cairo.png" alt=""/>
+                <button class="btn" id="btn1">Cairo</button>
+            </div>
+            <div class="item">
+                <img src="img/cremlin.png" alt=""/>
+                <button class="btn" id="btn2">Moskow</button>
+            </div>
+            <div class="item">
+                <img src="img/ny.png" alt=""/>
+                <button class="btn" id="btn3">NY</button>
+            </div>
+            <div class="item">
+                <img src="img/paris.png" alt=""/>
+                <button class="btn" id="btn4">Paris</button>
+            </div>
+            <div class="item">
+                <img src="img/rome.png" alt=""/>
+                <button class="btn" id="btn5">Rome</button>
+            </div>
+            <div class="item">
+                <img src="img/sydney.png" alt=""/>
+                <button class="btn" id="btn6">Sydney</button>
+            </div>
+        </div>
+    </div>
+    <div class="usercard" id="usercard">
+
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
