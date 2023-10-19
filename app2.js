@@ -15,7 +15,6 @@ let btn11 = document.getElementById("btn11");
 let btn12 = document.getElementById("btn12");
 
 btn7.addEventListener("click", function(){
-    window.location = 'cairo_date.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -27,11 +26,12 @@ btn7.addEventListener("click", function(){
 });
 
 btn8.addEventListener("click", function(){
+    window.location = 'cairo_date.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали товар 2!");
+        // tg.MainButton.setText("Вы выбрали товар 2!");
         item = "2";
         tg.MainButton.show();
     }
