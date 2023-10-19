@@ -12,13 +12,13 @@ body {
 
 .inner {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
 }
 
 .inner2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 200px;
 }
 
