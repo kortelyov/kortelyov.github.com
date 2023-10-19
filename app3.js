@@ -10,7 +10,7 @@ let item = "";
 let btn10 = document.getElementById("btn10");
 
 btn10.addEventListener("click", function(){
-    window.location = 'cargo_flights.html';
+    window.location = 'cairo_flights.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
