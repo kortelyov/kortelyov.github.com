@@ -18,8 +18,8 @@ body {
 
 .inner-main {
     display: block;
-    /*grid-template-columns: 1fr 1fr;*/
-    /*grid-template-rows: 200px;*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
 }
 
 .img {
