@@ -14,6 +14,24 @@ let btn02 = document.getElementById("btn02");
 let btn03 = document.getElementById("btn03");
 let btn04 = document.getElementById("btn04");
 
+let btn11 = document.getElementById("btn11");
+let btn12 = document.getElementById("btn12");
+let btn13 = document.getElementById("btn13");
+let btn14 = document.getElementById("btn14");
+let btn15 = document.getElementById("btn15");
+let btn16 = document.getElementById("btn16");
+
+let btn21 = document.getElementById("btn21");
+let btn22 = document.getElementById("btn22");
+let btn23 = document.getElementById("btn23");
+let btn24 = document.getElementById("btn24");
+let btn25 = document.getElementById("btn25");
+let btn26 = document.getElementById("btn26");
+
+let btn31 = document.getElementById("btn31");
+
+let btn42 = document.getElementById("btn42");
+
 btn01.addEventListener("click", function(){
     window.location = 'index_flight_type.html';
 });
@@ -32,19 +50,11 @@ btn04.addEventListener("click", function(){
 
 // INDEX_FLIGHT_TYPE.HTML
 
-let btn42 = document.getElementById("btn42");
 btn42.addEventListener("click", function(){
     window.location = 'index_from.html';
 });
 
 // INDEX_FROM.HTML
-
-let btn11 = document.getElementById("btn11");
-let btn12 = document.getElementById("btn12");
-let btn13 = document.getElementById("btn13");
-let btn14 = document.getElementById("btn14");
-let btn15 = document.getElementById("btn15");
-let btn16 = document.getElementById("btn16");
 
 btn11.addEventListener("click", function(){
     window.location = 'index_to.html';
@@ -72,13 +82,6 @@ btn16.addEventListener("click", function(){
 
 // INDEX_TO.HTML
 
-let btn21 = document.getElementById("btn21");
-let btn22 = document.getElementById("btn22");
-let btn23 = document.getElementById("btn23");
-let btn24 = document.getElementById("btn24");
-let btn25 = document.getElementById("btn25");
-let btn26 = document.getElementById("btn26");
-
 btn21.addEventListener("click", function(){
     window.location = 'index_date.html';
 });
@@ -105,10 +108,8 @@ btn26.addEventListener("click", function(){
 
 // INDEX_DATE.HTML
 
-let btn31 = document.getElementById("btn31");
-
 btn31.addEventListener("click", function(){
-    window.location = 'index_resul.html';
+    window.location = 'index_result.html';
 });
 
 
