@@ -31,7 +31,7 @@ btn8.addEventListener("click", function(){
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали товар 2!");
+        // tg.MainButton.setText("Вы выбрали товар 2!");
         item = "2";
         tg.MainButton.show();
     }
