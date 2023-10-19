@@ -15,7 +15,7 @@ let btn03 = document.getElementById("btn03");
 let btn04 = document.getElementById("btn04");
 
 btn01.addEventListener("click", function(){
-    window.location = 'index_from.html';
+    window.location = 'index_flight_type.html';
 });
 
 btn02.addEventListener("click", function(){
@@ -28,6 +28,13 @@ btn03.addEventListener("click", function(){
 
 btn04.addEventListener("click", function(){
     window.location = 'index_return.html';
+});
+
+// INDEX_FLIGHT_TYPE.HTML
+
+let btn42 = document.getElementById("btn42");
+btn42.addEventListener("click", function(){
+    window.location = 'index_from.html';
 });
 
 // INDEX_FROM.HTML
