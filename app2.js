@@ -15,7 +15,7 @@ let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
-    window.location = 'index_to.html';
+    window.location = 'cairo_date.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
