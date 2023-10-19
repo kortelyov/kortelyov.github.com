@@ -48,12 +48,6 @@ btn04.addEventListener("click", function(){
     window.location = 'index_return.html';
 });
 
-// INDEX_FLIGHT_TYPE.HTML
-
-btn42.addEventListener("click", function(){
-    window.location = 'index_from.html';
-});
-
 // INDEX_FROM.HTML
 
 btn11.addEventListener("click", function(){
@@ -110,6 +104,10 @@ btn26.addEventListener("click", function(){
 
 btn31.addEventListener("click", function(){
     window.location = 'index_result.html';
+});
+
+btn42.addEventListener("click", function(){
+    window.location = 'index_from.html';
 });
 
 
