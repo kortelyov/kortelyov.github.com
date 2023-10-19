@@ -15,11 +15,12 @@ let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
 btn1.addEventListener("click", function(){
+    window.location = 'cairo.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
     else {
-        tg.MainButton.setText("Вы выбрали товар 1!");
+        // tg.MainButton.setText("Вы выбрали товар 1!");
         item = "1";
         tg.MainButton.show();
     }
