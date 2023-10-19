@@ -17,7 +17,7 @@ body {
 }
 
 .inner-main {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
     grid-template-rows: 200px;
 }
