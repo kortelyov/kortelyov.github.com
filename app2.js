@@ -7,14 +7,14 @@ tg.MainButton.color = '#2cab37';
 
 let item = "";
 
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
-let btn4 = document.getElementById("btn4");
-let btn5 = document.getElementById("btn5");
-let btn6 = document.getElementById("btn6");
+let btn7 = document.getElementById("btn7");
+let btn8 = document.getElementById("btn8");
+let btn9 = document.getElementById("btn9");
+let btn10 = document.getElementById("btn10");
+let btn11 = document.getElementById("btn11");
+let btn12 = document.getElementById("btn12");
 
-btn1.addEventListener("click", function(){
+btn7.addEventListener("click", function(){
     window.location = 'cairo_date.html';
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
@@ -26,7 +26,7 @@ btn1.addEventListener("click", function(){
     }
 });
 
-btn2.addEventListener("click", function(){
+btn8.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -37,7 +37,7 @@ btn2.addEventListener("click", function(){
     }
 });
 
-btn3.addEventListener("click", function(){
+btn9.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -48,7 +48,7 @@ btn3.addEventListener("click", function(){
     }
 });
 
-btn4.addEventListener("click", function(){
+btn10.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -59,7 +59,7 @@ btn4.addEventListener("click", function(){
     }
 });
 
-btn5.addEventListener("click", function(){
+btn11.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -70,7 +70,7 @@ btn5.addEventListener("click", function(){
     }
 });
 
-btn6.addEventListener("click", function(){
+btn12.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
