@@ -176,7 +176,7 @@ window.addEventListener("load", () => {
 
   const setDateToInput = (timestamp) => {
     let dateString = getDateStringFromTimestamp(timestamp);
-    input.value = dateString;
+    input.innerText = dateString;
   };
   setDateToInput(todayTimestamp);
 

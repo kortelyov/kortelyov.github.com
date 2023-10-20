@@ -1,23 +1,23 @@
-:root {
-  --dark-body-bg: #232429;
-  --light-body-bg: #f5f7fb;
-
-  --dark-input: #323741;
-  --light-input: #ffffff;
-
-  --dark-border: #484d5a;
-  --light-border: #b8bccb;
-
-  --dark-date-foreground: #ffffff;
-  --dark-inactive-fg: #636a78;
-  --dark-active-fg: #9ca0b1;
-  --dark-current-year: #3b414a;
-  --dark-current-year-fg: #b2b8c9;
-  --dark-selected: #1d5eff;
-  --dark-hover: #2c437b;
-  --dark-arrows-bg: #b0b8cc;
-  --dark-arrows-fill: #333641;
-}
+/* :root { */
+/*   --dark-body-bg: #232429; */
+/*   --light-body-bg: #f5f7fb; */
+/**/
+/*   --dark-input: #323741; */
+/*   --light-input: #ffffff; */
+/**/
+/*   --dark-border: #484d5a; */
+/*   --light-border: #b8bccb; */
+/**/
+/*   --dark-date-foreground: #ffffff; */
+/*   --dark-inactive-fg: #636a78; */
+/*   --dark-active-fg: #9ca0b1; */
+/*   --dark-current-year: #3b414a; */
+/*   --dark-current-year-fg: #b2b8c9; */
+/*   --dark-selected: #1d5eff; */
+/*   --dark-hover: #2c437b; */
+/*   --dark-arrows-bg: #b0b8cc; */
+/*   --dark-arrows-fill: #333641; */
+/* } */
 
 html {
   box-sizing: border-box;
@@ -31,7 +31,7 @@ html {
 
 body {
   height: 100vh;
-  background: var(--dark-body-bg);
+  /* background: var(--dark-body-bg); */
   font-family: Helvetica, sans-serif;
   font-size: 1.02rem;
 }
@@ -58,7 +58,8 @@ label {
 }
 
 #date {
-  color: var(--dark-date-foreground);
+  /* color: var(--dark-date-foreground); */
+  color: var(--tg-theme-link-color, #00f);
   /* font-size: 16px; */
   padding: 10px 20px;
 }
@@ -71,30 +72,30 @@ label {
   outline: none;
 }
 
-#date_picker_input:after {
-  content: "▾";
-  padding: 6px 15px;
-  position: absolute;
-  right: 4px;
-  top: 0;
-  color: #8a8f9f;
-}
+/* #date_picker_input:after { */
+/*   content: "▾"; */
+/*   padding: 8px 15px; */
+/*   position: absolute; */
+/*   right: 4px; */
+/*   top: 0; */
+/*   color: #8a8f9f; */
+/* } */
 
-#date_picker_input.showCal:after {
-  transform: rotate(180deg);
-}
+/* #date_picker_input.showCal:after { */
+/*   transform: rotate(180deg); */
+/* } */
 
 #date_picker_calendar {
   min-height: fit-content;
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2); */
   overflow: hidden;
   padding: 12px;
 }
 
-#date,
+/* #date, */
 #date_picker_calendar {
   border-radius: 10px;
-  background: var(--dark-input);
+  background: var(--tg-theme-button-color, #000);
   /* border: 2px solid var(--dark-border); */
   border: none;
   width: 100%;
@@ -109,7 +110,7 @@ label {
   min-height: 30px;
   /*   background: pink; */
   margin-bottom: 8px;
-  color: var(--dark-date-foreground);
+  color: var(--tg-theme-button-text-color, #fff);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +119,7 @@ label {
 .cal-btn {
   width: 20px;
   height: 20px;
-  background: var(--dark-arrows-bg);
+  background: var(--tg-theme-secondary-bg-color, #000);
   border: none;
   padding: 0;
   margin: 0;
@@ -144,7 +145,7 @@ label {
   grid-template-columns: repeat(7, 1fr);
   row-gap: 5px;
   column-gap: 5px;
-  color: var(--dark-inactive-fg);
+  color: var(--tg-theme-button-text-color, #fff);
 }
 
 #cal_days {
@@ -166,13 +167,13 @@ label {
 }
 
 .current {
-  background: var(--dark-current-year);
-  color: var(--dark-current-year-fg);
+  background: var(--tg-theme-button-color, #000);
+  color: var(--tg-theme-button-text-color, #fff);
 }
 
 .current:not(.active):hover {
-  background: var(--dark-hover);
-  color: var(--dark-date-foreground);
+  background: var(--tg-theme-button-color, #000);
+  color: var(--tg-theme-button-text-color, #fff);
   border: 2px solid var(--dark-selected);
 }
 
@@ -182,8 +183,8 @@ label {
 }
 
 .active {
-  background: var(--dark-selected);
-  color: var(--dark-date-foreground);
+  background: var(--tg-theme-button-text-color, #fff);
+  color: var(--tg-theme-button-color, #000);
 }
 
 .inactive_indicator:after {
