@@ -40,7 +40,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-
+    width: 210px;
     transition: background .2s linear;
 }
 
