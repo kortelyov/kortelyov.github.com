@@ -9,14 +9,8 @@ let item = "";
 
 // INDEX.HTML
 
-let btn01 = document.getElementById("btn01");
-let btn02 = document.getElementById("btn02");
-let btn03 = document.getElementById("btn03");
-let btn04 = document.getElementById("btn04");
-
-let btn11 = document.getElementById("btn11");
-let btn12 = document.getElementById("btn12");
-let btn13 = document.getElementById("btn13");
+let search_button = document.getElementById("search");
+let oneway_button = document.getElementById("oneway");
 
 let btn21 = document.getElementById("btn21");
 let btn22 = document.getElementById("btn22");
@@ -34,12 +28,13 @@ let btn36 = document.getElementById("btn36");
 
 let btn41 = document.getElementById("btn41");
 
-btn01.addEventListener("click", function(){
+search_button.addEventListener("click", function(){
     window.location = 'index_flight_type.html';
 });
-btn02.addEventListener("click", function(){
-    window.location = 'index_registration.html';
+oneway_button.addEventListener("click", function(){
+    window.location = 'index_from.html';
 });
+
 btn03.addEventListener("click", function(){
     window.location = 'index_bonus.html';
 });
