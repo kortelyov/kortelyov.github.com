@@ -1,58 +1,68 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
+  margin: 0;
+  padding: 0;
+  font-size: 1.02rem;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
 }
 
 .container {
-    max-width: 390px;
+  /* max-width: 390px; */
 }
 
 .inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 200px 200px 200px; */
 }
 
 .inner-main {
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    padding-top: 145px;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  padding-top: 145px;
 }
 
 .img {
-    width: 150px;
+  width: 150px;
 }
 
 .item {
-    text-align: center;
-    padding: 10px 20px;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
 }
 
-button{
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    background: rgb(248, 168, 24);
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 210px;
-    transition: background .2s linear;
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 210px;
+  transition: background 0.2s linear;
 }
 
 button:hover {
-    background: red;
+  background: red;
 }
 
 .btn:hover {
-    background: lightgreen;
+  background: lightgreen;
 }
 
 .usercard {
-    text-align: center;
+  text-align: center;
+}
+
+.self-start {
+  align-self: start;
 }
