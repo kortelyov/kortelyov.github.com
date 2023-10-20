@@ -32,7 +32,7 @@ body {
     padding: 10px 20px;
 }
 
-.btn {
+button{
     display: inline-block;
     padding: 10px 20px;
     border: none;
