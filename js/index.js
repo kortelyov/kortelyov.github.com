@@ -10,18 +10,21 @@ let item = "";
 let search_button = document.getElementById("search");
 let oneway_button = document.getElementById("oneway");
 let from_cairo_button = document.getElementById("from_cairo");
+let currentPageClass = document.body.className;
 
-search_button.addEventListener("click", function(){
-    window.location = 'index_flight_type.html';
-});
-
-oneway_button.addEventListener("click", function(){
-    window.location = 'index_from.html';
-});
-
-from_cairo_button.addEventListener("click", function(){
-    window.location = 'index_to.html';
-});
+if (currentPageClass === "main-menu") {
+    search_button.addEventListener("click", function(){
+        window.location = 'index_flight_type.html';
+    });
+} else if (currentPageClass === "flight-type-page") {
+    oneway_button.addEventListener("click", function(){
+        window.location = 'index_from.html';
+    });
+} else if (currentPageClass === "from_menu") {
+    from_cairo_button.addEventListener("click", function(){
+        window.location = 'index_to.html';
+    });
+}
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(item);
