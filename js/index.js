@@ -11,7 +11,7 @@ let search_button = document.getElementById("search");
 let oneway_button = document.getElementById("oneway");
 let from_cairo_button = document.getElementById("from_cairo");
 let to_moskow_button = document.getElementById("to_moskow");
-let res = document.getElementById("res");
+let result_button = document.getElementById("result");
 
 let currentPageClass = document.body.className;
 
@@ -32,7 +32,7 @@ if (currentPageClass === "main-menu") {
           window.location = 'index_date.html';
     });
 } else if (currentPageClass === "date_picker") {
-        to_moskow_button.addEventListener("click", function(){
+        result_button.addEventListener("click", function(){
             window.location = 'flights.html';
       });
 }

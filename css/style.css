@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 21px;
+    font-size: 30px;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
 }
@@ -43,6 +43,10 @@ button{
     font-weight: 700;
     width: 210px;
     transition: background .2s linear;
+}
+
+button:hover {
+    background: red;
 }
 
 .btn:hover {
