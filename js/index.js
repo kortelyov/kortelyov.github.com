@@ -10,6 +10,9 @@ let item = "";
 let search_button = document.getElementById("search");
 let oneway_button = document.getElementById("oneway");
 let from_cairo_button = document.getElementById("from_cairo");
+let to_moskow_button = document.getElementById("to_moskow");
+let res = document.getElementById("res");
+
 let currentPageClass = document.body.className;
 
 if (currentPageClass === "main-menu") {
@@ -24,6 +27,14 @@ if (currentPageClass === "main-menu") {
     from_cairo_button.addEventListener("click", function(){
         window.location = 'index_to.html';
     });
+} else if (currentPageClass === "to_menu") {
+      to_moskow_button.addEventListener("click", function(){
+          window.location = 'index_date.html';
+    });
+} else if (currentPageClass === "date_picker") {
+        to_moskow_button.addEventListener("click", function(){
+            window.location = 'flights.html';
+      });
 }
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
