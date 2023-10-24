@@ -9,8 +9,8 @@ const searchStore = useSearchStore()
 import { useRouter, useRoute } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
-const from = ref('')
-const to = ref('')
+const from = ref(null)
+const to = ref(null)
 const way = ref('oneway')
 const dates = ref([])
 

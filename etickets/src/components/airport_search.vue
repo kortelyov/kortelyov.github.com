@@ -63,7 +63,7 @@ const handleClickOutside = (event) => {
 const selectAirport = (airport) => {
   term.value = airport.name
   isActive.value = false
-  emit('update:modelValue', airport.name)
+  emit('update:modelValue', airport)
 }
 
 onMounted(() => {
