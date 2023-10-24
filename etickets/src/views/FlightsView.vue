@@ -13,7 +13,7 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
   <div class="p-5 w-full text-telegram-text">
     <router-link to="/" class="text-telegram-link">Назад</router-link>
     <div class="overflow-x-auto relative mb-2 shadow-md sm:rounded-lg">
-      <table class="p-2 w-full text-sm text-left border border-telegram-hint">
+      <table class="p-2 w-full text-sm text-left rounded-md border border-telegram-hint">
         <thead class="text-xs uppercase text-telegram-text">
           <tr>
             <th class="py-3 px-6">Маршрут</th>
@@ -34,7 +34,7 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
       class="overflow-x-auto relative shadow-md sm:rounded-lg"
       v-if="searchStore.dates.length > 1"
     >
-      <table class="p-2 w-full text-sm text-left border border-telegram-hint">
+      <table class="p-2 w-full text-sm text-left rounded-md border border-telegram-hint">
         <thead class="text-xs uppercase text-telegram-text">
           <tr>
             <th class="py-3 px-6">Маршрут</th>
