@@ -16,8 +16,8 @@ module.exports = {
         'telegram-primary': 'var(--tg-theme-button-color)',
         'telegram-primary-text': 'var(--tg-theme-button-text-color)',
         'telegram-secondary-bg': 'var(--tg-theme-secondary-bg-color)',
-        'vtd-primary': 'var(--telegram-button-color8cc)',
-        'vtd-secondary': 'var(--telegram-hint-color)'
+        'vtd-primary': 'var(--tg-theme-button-color)',
+        'vtd-secondary': 'var(--tg-theme-secondary-bg-color)'
       }
     }
   },

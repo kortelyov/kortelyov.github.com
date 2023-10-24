@@ -4,18 +4,18 @@
       <input
         type="text"
         v-model="term"
-        class="block px-2.5 pt-4 pb-2.5 w-full text-sm text-gray-900 bg-transparent rounded-lg border appearance-none focus:border-blue-600 focus:ring-0 focus:outline-none border-1 peer"
+        class="block px-2.5 pt-4 pb-2.5 w-full text-sm bg-transparent rounded-lg border appearance-none focus:ring-0 focus:outline-none text-telegram-text border-1 peer border-secondary-bg focus:border-telegran-primary"
         @keyup="activate"
         @input="activate"
         @click.stop="activate"
       />
 
       <label
-        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 peer-focus:text-telegram-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
         >{{ props.label }}</label
       >
       <div
-        class="absolute z-20 w-full rounded-md border airport-dropdown bg-telegram-bg"
+        class="absolute z-20 w-full rounded-md border border-telegram-secondary-bg airport-dropdown bg-telegram-bg"
         :class="{ hidden: !isActive }"
       >
         <template v-for="airport in filteredAirports" :key="airport.code">
@@ -24,13 +24,13 @@
             class="flex items-center py-2 px-4 mr-1 cursor-pointer hover:bg-telegram-secondary-bg"
           >
             <div class="flex-1">
-              <p>
+              <p class="text-telegram-text">
                 <span class="font-bold">({{ airport.code }})</span> {{ airport.name }}
               </p>
-              <p class="text-sm text-gray-500">{{ airport.city }}, {{ airport.country }}</p>
+              <p class="text-sm text-telegram-hint">{{ airport.city }}, {{ airport.country }}</p>
             </div>
           </div>
-          <div class="border-b"></div>
+          <div class="border-b border-telegram-secondary-bg"></div>
         </template>
       </div>
     </div>
