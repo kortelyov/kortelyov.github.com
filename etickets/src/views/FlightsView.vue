@@ -17,9 +17,9 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
       <router-link to="/" class="text-telegram-link">Назад</router-link>
     </div>
     <p class="py-2">{{ searchStore.dates[0] }}</p>
-    <div class="flex flex-row h-40">
+    <div class="flex-row md:flex md:h-44">
       <div class="overflow-x-auto relative mr-2 mb-2 h-full grow">
-        <div class="py-2 px-4 h-full rounded border bg-telegram-hint">
+        <div class="py-2 px-4 h-full rounded border">
           <div class="flex flex-col justify-between h-full">
             <div class="flex flex-col text-telegram-text">
               <span>{{ searchStore.from.code }}</span>
@@ -34,13 +34,13 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
         </div>
       </div>
       <div class="flex overflow-x-auto relative flex-col mr-2 mb-2 h-full grow-0">
-        <div class="mb-1 h-full rounded border bg-telegram-hint">
+        <div class="mb-1 h-full rounded border">
           <div class="py-1 px-3 uppercase bg-telegram-primary text-telegram-primary-text">
             Эконом
           </div>
-          <div class="px-3">
+          <div class="py-2 px-3">
             <input
-              id="oneway"
+              id="fromtype"
               type="radio"
               value="econom"
               name="default-radio"
@@ -50,13 +50,13 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
             <label for="default-radio-1" class="ml-2 text-sm">4500 р.</label>
           </div>
         </div>
-        <div class="mt-1 h-full rounded border bg-telegram-hint">
+        <div class="mt-1 h-full rounded border">
           <div class="py-1 px-3 uppercase bg-telegram-primary text-telegram-primary-text">
             Бизнес
           </div>
-          <div class="px-3">
+          <div class="py-2 px-3">
             <input
-              id="oneway"
+              id="fromtype"
               type="radio"
               value="business"
               name="default-radio"
@@ -70,9 +70,9 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
     </div>
 
     <p class="pt-4 pb-2" v-if="searchStore.dates.length > 1">{{ searchStore.dates[1] }}</p>
-    <div class="flex flex-row h-40" v-if="searchStore.dates.length > 1">
+    <div class="flex-row md:flex md:h-44" v-if="searchStore.dates.length > 1">
       <div class="overflow-x-auto relative mr-2 mb-2 h-full grow">
-        <div class="py-2 px-4 h-full rounded border bg-telegram-hint">
+        <div class="py-2 px-4 h-full rounded border">
           <div class="flex flex-col justify-between h-full">
             <div class="flex flex-col text-telegram-text">
               <span>{{ searchStore.from.code }}</span>
@@ -87,32 +87,31 @@ if (searchStore.from === '' || searchStore.to === '' || searchStore.dates.length
         </div>
       </div>
       <div class="flex overflow-x-auto relative flex-col mr-2 mb-2 h-full grow-0">
-        <div class="mb-1 h-full rounded border bg-telegram-hint">
+        <div class="mb-1 h-full rounded border">
           <div class="py-1 px-3 uppercase bg-telegram-primary text-telegram-primary-text">
             Эконом
           </div>
-          <div class="px-3">
+          <div class="py-2 px-3">
             <input
-              id="oneway"
+              id="totype"
               type="radio"
               value="econom"
-              name="default-radio"
+              name="totype"
               v-model="toType"
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-2 focus:ring-telegram-primary"
             />
             <label for="default-radio-1" class="ml-2 text-sm">5700 р.</label>
           </div>
         </div>
-        <div class="mt-1 h-full rounded border bg-telegram-hint">
+        <div class="mt-1 h-full rounded border">
           <div class="py-1 px-3 uppercase bg-telegram-primary text-telegram-primary-text">
             Бизнес
           </div>
-          <div class="px-3">
+          <div class="py-2 px-3">
             <input
-              id="oneway"
               type="radio"
               value="business"
-              name="default-radio"
+              name="totype"
               v-model="toType"
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-2 focus:ring-telegram-primary"
             />
