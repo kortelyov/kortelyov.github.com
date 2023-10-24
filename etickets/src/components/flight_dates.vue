@@ -25,12 +25,12 @@ const formatter = ref({
       <input
         type="text"
         :value="value || placeholder"
-        class="block px-2.5 pt-4 pb-2.5 w-full text-sm text-gray-900 bg-transparent rounded-lg border appearance-none cursor-pointer focus:border-blue-600 focus:ring-0 focus:outline-none border-1 peer"
+        class="block px-2.5 pt-4 pb-2.5 w-full text-sm bg-transparent rounded-lg border appearance-none cursor-pointer focus:ring-0 focus:outline-none text-telegram-text border-1 peer focus:border-telegram-primary"
         readonly
       />
       <label
         for="dates"
-        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 text-telegram-hint peer-focus:text-telegram-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
         >Дат{{ !props.oneway ? 'ы' : 'а' }}</label
       >
     </vue-tailwind-datepicker>

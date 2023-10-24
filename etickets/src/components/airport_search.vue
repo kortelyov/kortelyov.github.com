@@ -4,14 +4,14 @@
       <input
         type="text"
         v-model="term"
-        class="block px-2.5 pt-4 pb-2.5 w-full text-sm bg-transparent rounded-lg border appearance-none focus:ring-0 focus:outline-none text-telegram-text border-1 peer border-secondary-bg focus:border-telegran-primary"
+        class="block px-2.5 pt-4 pb-2.5 w-full text-sm bg-transparent rounded-lg border appearance-none focus:ring-0 focus:outline-none text-telegram-text border-1 peer border-telegram-hint focus:border-telegram-primary"
         @keyup="activate"
         @input="activate"
         @click.stop="activate"
       />
 
       <label
-        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 peer-focus:text-telegram-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
+        class="absolute left-1 top-2 z-10 px-2 text-sm duration-300 transform scale-75 -translate-y-4 bg-telegram-bg origin-[0] peer-focus:px-2 text-telegram-hint peer-focus:text-telegram-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4"
         >{{ props.label }}</label
       >
       <div
