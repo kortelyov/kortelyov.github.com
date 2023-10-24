@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Московский международный аэропорт Шереметьево",
+    "code": "SVO",
+    "city": "Москва",
+    "country": "Россия"
+  },
+  {
+    "name": "Пулково",
+    "code": "LED",
+    "city": "Санкт-Петербург",
+    "country": "Россия"
+  },
+  {
+    "name": "Сочи Адлер",
+    "code": "AER",
+    "city": "Сочи",
+    "country": "Россия"
+  },
+  {
+    "name": "John F. Kennedy International Airport",
+    "code": "JFK",
+    "city": "New York",
+    "country": "United States"
+  },
+  {
+    "name": "Heathrow Airport",
+    "code": "LHR",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Charles de Gaulle Airport",
+    "code": "CDG",
+    "city": "Paris",
+    "country": "France"
+  },
+  {
+    "name": "Sydney Kingsford Smith International Airport",
+    "code": "SYD",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "Narita International Airport",
+    "code": "NRT",
+    "city": "Tokyo",
+    "country": "Japan"
+  },
+  {
+    "name": "Dubai International Airport",
+    "code": "DXB",
+    "city": "Dubai",
+    "country": "United Arab Emirates"
+  },
+  {
+    "name": "Beijing Capital International Airport",
+    "code": "PEK",
+    "city": "Beijing",
+    "country": "China"
+  }
+]
