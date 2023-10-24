@@ -9,13 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'telegram-bg': 'var(--telegram-bg-color)',
-        'telegram-text': 'var(--telegram-text-color)',
-        'telegram-hint': 'var(--telegram-hint-color)',
-        'telegram-link': 'var(--telegram-link-color8cc)',
-        'telegram-primary': 'var(--telegram-button-color8cc)',
-        'telegram-primary-text': 'var(--telegram-button-text-color)',
-        'telegram-secondary-bg': 'var(--telegram-secondary-bg-color)',
+        'telegram-bg': 'var(--tg-theme-bg-color)',
+        'telegram-text': 'var(--tg-theme-text-color)',
+        'telegram-hint': 'var(--tg-theme-hint-color)',
+        'telegram-link': 'var(--tg-theme-link-color)',
+        'telegram-primary': 'var(--tg-theme-button-color)',
+        'telegram-primary-text': 'var(--tg-theme-button-text-color)',
+        'telegram-secondary-bg': 'var(--tg-theme-secondary-bg-color)',
         'vtd-primary': 'var(--telegram-button-color8cc)',
         'vtd-secondary': 'var(--telegram-hint-color)'
       }
